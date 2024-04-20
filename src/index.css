@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@layer components {
+  .main_heading {
+    @apply lg:leading-[74px] md:leading-[64px] font-semibold	lg:text-[64px] md:text-[52px] text-4xl;
+  }
+
+  .services_heading {
+    @apply leading-[30px] font-semibold text-[26px];
+  }
+
+  .text {
+    @apply leading-[24px] font-normal text-[16px];
+  }
+  .btn {
+    @apply text-sm md:text-[18px] font-semibold leading-[22px] bg-customGreen gap-[10px] text-white;
+  }
+  .blog_heading {
+    @apply leading-[90px] md:leading-[110px] lg:leading-[129px] text-[76px] md:text-[96px] lg:text-[110px] font-black text-customGreen;
+  }
+  .blog_heading2 {
+    @apply text-[32] md:text-[38px] lg:text-[45px] leading-[42px] md:leading-[48px] lg:leading-[52px] font-extrabold text-gray-400;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding: 10rem; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  box-shadow: inset 0 0 3px gainsboro;
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4169e1;
+  border-radius: 5px;
+}
+
+.swiper-slide-active {
+  display: flex !important;
+  justify-content: end !important;
+  padding-right: 40px;
+}
+
+@media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .swiper-slide-active {
+    justify-content: center !important;
+    padding-right: 0px;
+  }
+}
+
+.myBorder {
+  box-shadow: 0px 1px 5px 0px #00000040;
+}
